@@ -18,6 +18,24 @@
     </div>
     <p id="object">あいうえお</p>
     <button id="change">実行</button>
+
+    <h2>文字列を変化させ、戻す</h2>
+    <div id="sourceCode">
+      <p>
+        const BUTTON_CLICK_EVENT2 = document.getElementById('change2');
+      <p>let changeText = "変化しました！";</p>
+      <p>BUTTON_CLICK_EVENT2.addEventListener('click', () => {</p>
+      <p>let object = document.getElementById('object2');</p>
+      <p>let tempText = object.textContent;</p>
+      <p>object.innerText = changeText;</p>
+      <p>changeText = tempText;</p>
+});
+      </p>
+    </div>
+    <p id="object2">あいうえお</p>
+    <button id="change2">変化</button>
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
