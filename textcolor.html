@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Scroll</title>
+  </head>
+  <body>
+    <div id = "otherContents">
+        <a href="./textcolor.html">文字色の変更</a>
+    </div>
+    <div id="app"></div>
+    <h1>文字の色を変化させる。</h1>
+    <h2>文字色と背景色を変化させる</h2>
+    <div id = "explain">
+      <p>HTMLで記載されているpタグのidを取得し、文字列を変化させます。</p>
+
+    </div>
+
+    <div id="sourceCode">
+      <p>
+        BUTTON_CLICK_EVENT.addEventListener('click', () => {<br>
+            let object = document.getElementById('object');<br>
+            object.style.color = '#ffffff';            //文字色を白にする<br>
+            object.style.backgroundColor = '#ff0000';  //背景色を赤にする<br>
+          });<br>
+      </p>
+    </div>
+    <p id="object">あいうえお</p>
+    <button id="change">実行</button>
+
+    <script type="module" src="/src/textcolor.js"></script>
+  </body>
+</html>
