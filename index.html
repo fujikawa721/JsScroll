@@ -7,26 +7,34 @@
     <title>JS-Scroll</title>
   </head>
   <body>
+    <!--大メニュー-->
+    <div id = "bigMenu">
+    </div>
+    <!--中メニュー-->
     <div id = "otherContents">
+      <a href="./index.html">文字列の変更</a>
       <a href="./textcolor.html">文字色の変更</a>
     </div>
     <div id="app"></div>
-    <h1>文字を変化させる。</h1>
-    <h2>文字列を変化させる</h2>
-    <div id = "explain">
-      <p>HTMLで記載されているpタグのidを取得し、文字列を変化させます。</p>
+    <div id = "mainContent">
+      <h1>文字を変化させる。</h1>
+      <div class="content">
+        <h2>文字列を変化させる</h2>
+        <div id = "explain">
+          <p>HTMLで記載されているpタグのidを取得し、文字列を変化させます。</p>
+        </div>
 
-    </div>
+        <div id="sourceCode">
+          <p>
+            let object = document.getElementById('object'); object.innerText =
+            '変更しました'
+          </p>
+        </div>
+        <p id="object">あいうえお</p>
+        <button id="change">実行</button>
+      </div>
 
-    <div id="sourceCode">
-      <p>
-        let object = document.getElementById('object'); object.innerText =
-        '変更しました'
-      </p>
-    </div>
-    <p id="object">あいうえお</p>
-    <button id="change">実行</button>
-
+      <div class="content">
     <h2>文字列を変化させ、戻す</h2>
     <div id = "explain">
       <p>HTMLで記載されているpタグのidを取得し、文字列を取得し変数に格納します。<br>
@@ -44,9 +52,12 @@
 });
       </p>
     </div>
+
     <p id="object2">あいうえお</p>
     <button id="change2">変化</button>
 
+  </div>
+  </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
